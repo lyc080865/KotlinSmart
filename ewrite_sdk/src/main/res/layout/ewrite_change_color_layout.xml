@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorGroup
+        android:id="@+id/cg_colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:checkedButton="@+id/cr_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:id="@+id/cr_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_333"
+            app:image_stroke_color="@color/image_color_333" />
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_3B81FF"
+            app:image_stroke_color="@color/image_color_3B81FF" />
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_1BCE74"
+            app:image_stroke_color="@color/image_color_1BCE74" />
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_FFDE28"
+            app:image_stroke_color="@color/image_color_FFDE28" />
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_FF9B43"
+            app:image_stroke_color="@color/image_color_FF9B43" />
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_FF636A"
+            app:image_stroke_color="@color/image_color_FF636A" />
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_FF63CD"
+            app:image_stroke_color="@color/image_color_FF63CD" />
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_B063FF"
+            app:image_stroke_color="@color/image_color_B063FF" />
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_6367FF"
+            app:image_stroke_color="@color/image_color_6367FF" />
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_63CDFF"
+            app:image_stroke_color="@color/image_color_63CDFF" />
+
+        <com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorRadio
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:image_color="@color/image_color_63FF63"
+            app:image_stroke_color="@color/image_color_63FF63" />
+    </com.ewrite.ewrite_sdk.dialog.choosecolordialog.EwriteColorGroup>
+</RelativeLayout>

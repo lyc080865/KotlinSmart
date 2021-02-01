@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:keepScreenOn="true">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/homework_result_title_layout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <lpt.smart.pen.view.MediumTextView-->
+<!--            android:id="@+id/homework_result_bs_tv"-->
+<!--            android:layout_width="135dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:background="@drawable/bg_user_center_tab"-->
+<!--            android:gravity="center"-->
+<!--            android:text="笔顺结果"-->
+<!--            android:textColor="@color/color_ffffff"-->
+<!--            android:textSize="18sp" />-->
+
+<!--        <lpt.smart.pen.view.MediumTextView-->
+<!--            android:id="@+id/homework_result_db_tv"-->
+<!--            android:layout_width="135dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:background="@drawable/bg_user_center_tab"-->
+<!--            android:gravity="center"-->
+<!--            android:text="对比结果"-->
+<!--            android:textColor="@color/color_ffffff"-->
+<!--            android:textSize="18sp" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <View-->
+<!--        android:id="@+id/bg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginLeft="95dp"-->
+<!--        android:layout_marginRight="95dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:background="@drawable/dialog_bg"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/homework_result_title_layout" />-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/homework_result_original_img"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="95dp"-->
+<!--        android:layout_marginRight="95dp"-->
+<!--        android:background="@drawable/result_img_bg"-->
+<!--        app:layout_constraintTop_toTopOf="@id/bg" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/homework_result_write_bg_img"-->
+<!--        android:layout_width="155dp"-->
+<!--        android:layout_height="155dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginLeft="80dp"-->
+<!--        android:layout_marginRight="60dp"-->
+<!--        android:background="@drawable/write_view_bg"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/bg"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/bg"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/homework_result_write_demonstration_img"-->
+<!--        app:layout_constraintTop_toTopOf="@id/bg" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/homework_result_write_standard_img"-->
+<!--        android:layout_width="155dp"-->
+<!--        android:layout_height="155dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/write_view_bg"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/bg"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/homework_result_write_bg_img"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/homework_result_write_bg_img"-->
+<!--        app:layout_constraintTop_toTopOf="@id/bg" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/homework_result_write_img"-->
+<!--        android:layout_width="155dp"-->
+<!--        android:layout_height="155dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/bg"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/homework_result_write_bg_img"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/homework_result_write_bg_img"-->
+<!--        app:layout_constraintTop_toTopOf="@id/bg" />-->
+
+<!--    <com.ewrite.ewrite_sdk.widget.WriteDrawView-->
+<!--        android:id="@+id/homework_result_write_view"-->
+<!--        android:layout_width="155dp"-->
+<!--        android:layout_height="155dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:src="@drawable/write_view_bg"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/bg"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/homework_result_write_bg_img"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/homework_result_write_bg_img"-->
+<!--        app:layout_constraintTop_toTopOf="@id/bg" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/homework_result_write_demonstration_img"-->
+<!--        android:layout_width="155dp"-->
+<!--        android:layout_height="155dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginRight="80dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:src="@drawable/write_view_bg"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/bg"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/homework_result_write_bg_img"-->
+<!--        app:layout_constraintRight_toRightOf="@id/bg"-->
+<!--        app:layout_constraintTop_toTopOf="@id/bg" />-->
+
+<!--    <lpt.smart.pen.view.MediumTextView-->
+<!--        android:id="@+id/homework_first_tv"-->
+<!--        style="@style/text"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="你的笔顺"-->
+<!--        android:textColor="@color/text_0"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/homework_result_write_bg_img"-->
+<!--        app:layout_constraintRight_toRightOf="@id/homework_result_write_bg_img"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/homework_result_write_bg_img" />-->
+
+<!--    <lpt.smart.pen.view.MediumTextView-->
+<!--        android:id="@+id/homework_second_tv"-->
+<!--        style="@style/text"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="正确笔顺"-->
+<!--        android:textColor="@color/text_0"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/homework_result_write_demonstration_img"-->
+<!--        app:layout_constraintRight_toRightOf="@id/homework_result_write_demonstration_img"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/homework_result_write_demonstration_img" />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:background="@drawable/dialog_dismiss"-->
+<!--        android:onClick="backFish"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/bg"-->
+<!--        app:layout_constraintTop_toTopOf="@id/bg" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

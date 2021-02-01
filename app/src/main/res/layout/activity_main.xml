@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/web_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_course_center_cl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.kotlin.smart.view.MediumTextView
+            android:id="@+id/main_course_center_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/main_title_bg"
+            android:drawableRight="@drawable/main_next_yellow_img"
+            android:drawablePadding="8dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="7dp"
+            android:text="课程中心"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/course_center_space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/main_course_center_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/main_course_center_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_course_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/course_center_space"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_class_center_cl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toRightOf="@+id/main_course_center_cl"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.kotlin.smart.view.MediumTextView
+            android:id="@+id/main_class_center_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/main_title_bg"
+            android:drawableRight="@drawable/main_next_yellow_img"
+            android:drawablePadding="8dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="7dp"
+            android:text="我的班级"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/class_center_space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/main_class_center_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/main_my_class_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_main_class_center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/class_center_space"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/main_question_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/main_question_img"
+        app:layout_constraintLeft_toRightOf="@+id/main_class_center_cl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_music_img_btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/music_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_user_center_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/main_music_img_btn"
+        android:gravity="center_vertical"
+        app:layout_constraintRight_toLeftOf="@id/main_music_img_btn"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.kotlin.smart.view.MediumTextView
+            android:id="@+id/main_user_center_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/main_title_bg"
+            android:drawableRight="@drawable/main_next_yellow_img"
+            android:drawablePadding="8dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="7dp"
+            android:text="个人中心"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/user_center_space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/main_user_center_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/main_user_center_iv"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/icon_sex_man"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/user_center_space"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/cl_system_message"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:visibility="gone"-->
+    <!--        tools:visibility="visible">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_system_message"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/icon_main_system_msg"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent" />-->
+
+    <!--        <AdapterViewFlipper-->
+    <!--            android:id="@+id/avf_view"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:inAnimation="@animator/system_message_in"-->
+    <!--            android:outAnimation="@animator/system_message_out"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toRightOf="@id/iv_system_message"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/main_bluetooth_connection_img"-->
+    <!--        android:layout_width="125dp"-->
+    <!--        android:layout_height="75dp"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_margin="20dp"-->
+    <!--        android:src="@drawable/main_bluetooth_connection_img" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calibration_bg">
+
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/calibration_rewrite"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/calibration_blue"
+        android:text="重新写"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/calibration_move_left"/>
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/calibration_next_text"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/calibration_orange"
+        android:text="下一步"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/calibration_move_right"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/calibration_reset_text"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:drawableTop="@drawable/reset_calibration"
+        android:drawablePadding="2dp"
+        android:text="重新校准"
+        app:layout_constraintLeft_toLeftOf="@id/calibration_next_text"
+        app:layout_constraintRight_toRightOf="@id/calibration_next_text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/calibration_white_bg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/write_bg"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.ewrite.ewrite_sdk.widget.WriteDrawView
+        android:id="@+id/item_write_view"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/write_calibration_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/calibration_mask_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/calibration_move_up"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="35dp"
+        android:clickable="true"
+        android:src="@drawable/calibration_move"
+        app:layout_constraintBottom_toTopOf="@id/calibration_white_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/calibration_move_down"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:rotation="180"
+        android:src="@drawable/calibration_move"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calibration_white_bg"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/calibration_move_left"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="35dp"
+        android:clickable="true"
+        android:rotation="-90"
+        android:src="@drawable/calibration_move"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/calibration_white_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/calibration_move_right"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="35dp"
+        android:clickable="true"
+        android:rotation="90"
+        android:src="@drawable/calibration_move"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/calibration_white_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <lpt.smart.pen.view.FingerImageView
+        android:id="@+id/calibration_finger_img"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/finger_img"
+        app:layout_constraintLeft_toRightOf="@id/calibration_move_right"
+        app:layout_constraintTop_toTopOf="@id/calibration_move_right"
+        tools:ignore="MissingConstraints" />
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/calibration_finger_text"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:text="小朋友点击箭头,\n调整字的位置吧!"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@id/calibration_move_right"
+        app:layout_constraintTop_toBottomOf="@id/calibration_finger_img"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/show_img_bg_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <lpt.smart.pen.view.MNGestureView
+        android:id="@+id/mnGestureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/imp_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </lpt.smart.pen.view.MNGestureView>
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/show_img_text"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+      style="@style/text"/>
+
+</FrameLayout>

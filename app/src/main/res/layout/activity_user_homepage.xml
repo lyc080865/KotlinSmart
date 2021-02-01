@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_97d2ff">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="backFish"
+        android:src="@drawable/icon_common_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_user_homepage_title"
+        android:paddingLeft="70dp"
+        android:paddingTop="10dp"
+        android:paddingRight="70dp"
+        android:paddingBottom="10dp"
+        android:text="我的主页"
+        android:textColor="@color/color_262626"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/cl_info"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_user_homepage_info"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_back">
+
+        <ImageView
+            android:id="@+id/iv_portrait"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_class_user_man_portrait" />
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/color_ffffff"
+            android:textSize="20sp"
+            tools:text="乐宝宝" />
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/color_ffffff"
+            android:textSize="12sp"
+            tools:text="生日：2000/05/05" />
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/tv_address_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地区："
+                android:textColor="@color/color_ffffff"
+                android:textSize="12sp" />
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/color_ffffff"
+                android:textSize="12sp"
+                tools:text="西藏自治区拉萨市城关区" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/tv_calligraphy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:drawableStart="@drawable/icon_calligraphy_num"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="练    字"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14sp" />
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/tv_calligraphy_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14sp"
+                tools:text="48天" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/tv_good_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:drawableStart="@drawable/icon_good_word_num"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="优秀字"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14sp" />
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/tv_good_word_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14sp"
+                tools:text="369个" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/tv_flower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:drawableStart="@drawable/icon_flower_num"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="小红花"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14sp" />
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/tv_flower_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14sp"
+                tools:text="1548个" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/tv_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:drawableStart="@drawable/icon_gold_num"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="金币数"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14sp" />
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/tv_gold_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14sp"
+                tools:text="581个" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_work"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/bg_user_homepage_work"
+        app:layout_constraintBottom_toBottomOf="@id/cl_info"
+        app:layout_constraintLeft_toRightOf="@id/cl_info"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cl_info">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/tv_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_class_no_work"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:text="还没有交作业哦…"
+            android:textColor="@color/color_1183db"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintRight_toRightOf="@id/cl_info"
+        app:layout_constraintTop_toTopOf="@id/cl_info" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/cl_info"
+        app:layout_constraintRight_toRightOf="@id/cl_info" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_user_homepage_connect"
+        app:layout_constraintLeft_toLeftOf="@id/space1"
+        app:layout_constraintTop_toTopOf="@id/space1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_user_homepage_connect"
+        app:layout_constraintBottom_toBottomOf="@id/space2"
+        app:layout_constraintLeft_toLeftOf="@id/space2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

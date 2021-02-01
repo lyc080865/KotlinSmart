@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <lpt.smart.pen.view.GrayLinearLayout
+            android:id="@+id/item_course_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_course_img"
+                android:layout_width="155dp"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/movie_course" />
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/item_course_title"
+                style="@style/text"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/text_color"
+                android:textSize="20dp" />
+
+        </lpt.smart.pen.view.GrayLinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/item_course_lock_statues"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_course_lock" />
+
+        <ImageView
+            android:id="@+id/item_commented_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/commented_img" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/item_course_next_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/course_triangle" />
+</LinearLayout>

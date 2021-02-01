@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <ImageView
+        android:id="@+id/course_introduction_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="backFish"
+        android:src="@drawable/icon_common_back" />
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/course_introduction_activation"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/activation_img"
+        android:text="激活课程"
+        android:textSize="16sp" />
+
+    <lpt.smart.pen.view.MediumTextView
+        style="@style/text"
+        android:layout_alignBaseline="@id/course_introduction_activation"
+        android:layout_toLeftOf="@id/course_introduction_activation"
+        android:layout_toRightOf="@id/course_introduction_back"
+        android:text="XXXX课程介绍"
+        android:textColor="#885400"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/web_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/course_introduction_activation"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" />
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/course_introduction_copy_btn"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_bg"
+        android:paddingLeft="60dp"
+        android:paddingTop="10dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="10dp"
+        android:text="复制淘口令"
+        android:textSize="16sp" />
+
+</RelativeLayout>

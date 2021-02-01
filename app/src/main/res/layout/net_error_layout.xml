@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/net_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/bad_net_error_img" />
+
+    <!--    <lpt.smart.pen.view.MediumTextView-->
+    <!--        style="@style/text"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:paddingTop="40dp"-->
+    <!--        android:paddingBottom="40dp"-->
+    <!--        android:text="网络君已经出门啦,快去找找他吧!"-->
+    <!--        android:textColor="@color/text_3"-->
+    <!--        android:textSize="17sp" />-->
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="#F4F4F4" />-->
+
+    <!--    <lpt.smart.pen.view.MediumTextView-->
+    <!--        android:id="@+id/net_error"-->
+    <!--        style="@style/text"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:padding="15dp"-->
+    <!--        android:text="检查网络"-->
+    <!--        android:textColor="@color/blue"-->
+    <!--        android:textSize="15sp" />-->
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#9ED6FF</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">#9ED6FF</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateHidden</item>
+        <item name="android:configChanges">keyboardHidden</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <!--        加入这个8.0会有问题-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--        加入这个8.0会有问题-->
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- 防止同时按下两个按钮 -->
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <!--        跳转动画-->
+        <item name="android:windowAnimationStyle">@style/activityAnim</item>
+    </style>
+
+    <style name="MainAppTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="transparentAppTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="StartAppTheme" parent="AppTheme">
+        <!--        <item name="android:windowDisablePreview">true</item>-->
+        <item name="android:windowBackground">@drawable/launch</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="title_text">
+        <item name="background">@drawable/title_bg</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">70dp</item>
+        <item name="android:paddingLeft">70dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="edit">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:gravity">center</item>
+        <item name="background">@drawable/btn_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TransparentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">#9ED6FF</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">#9ED6FF</item>
+    </style>
+
+    <!--windowIsTranslucent true 导致的问题：
+	1、部分机型（测试机vivo）连续点击回退到桌面
+	2、startActivity后立即finish当前界面，会出现背景显示前一个界面或者桌面
+
+进出场动画，可以使用下面的四个，如使用需要删除如下东西(还需要测试验证)：
+	1、删除 AppTheme中windowIsTranslucent、windowBackground
+	2、删除 BaseActivity finish方法中的overridePendingTransition
+	3、删除 使用Constants.FINISH_ACTIVITY 延迟关闭当前界面的地方
+	4、取消MainActivity单独设置的MainAppTheme样式-->
+    <!-- 使用style方式定义activity切换动画 -->
+    <style name="activityAnim">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_out</item>
+        <!--        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>-->
+        <!--        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>-->
+        <!--        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>-->
+        <!--        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>-->
+    </style>
+
+    <!-- dialog theme. -->
+    <style name="lowPowerDialogAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_low_power_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_low_power_out</item>
+    </style>
+
+    <declare-styleable name="CircleProgressbar">
+        <attr name="in_circle_color" format="color" />
+    </declare-styleable>
+
+</resources>

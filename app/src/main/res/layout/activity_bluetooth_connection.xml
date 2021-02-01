@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="backFish"
+        android:src="@drawable/icon_common_back" />
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/ship_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ship_bluetooth"
+        android:gravity="center"
+        android:text="跳过"
+        android:textColor="#C08C51"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bluetooth_type_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/bluetooth_type_one_tv"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bluetooth_btn_bg"
+            android:text="步骤1"
+            android:textColor="@drawable/bluetooth_btn_text_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:background="#FAE4CA" />
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/bluetooth_type_two_tv"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bluetooth_btn_bg"
+            android:text="步骤2"
+            android:textColor="@drawable/bluetooth_btn_text_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:background="#FAE4CA" />
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/bluetooth_type_three_tv"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bluetooth_btn_bg"
+            android:text="步骤3"
+            android:textColor="@drawable/bluetooth_btn_text_color"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bluetooth_connection_img"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_below="@id/bluetooth_type_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/bluetooth_connection" />
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/bluetooth_open_btn"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@id/bluetooth_connection_img"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/bluetooth_connection_img"
+        android:background="@drawable/btn_bg"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="8dp"
+        android:text="我已打开"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/bluetooth_recycle_layout"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bluetooth_type_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bluetooth_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:overScrollMode="never" />
+
+        <lpt.smart.pen.view.MediumTextView
+            style="@style/text"
+            android:layout_margin="20dp"
+            android:text="选择蓝牙设备"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/bluetooth_connection_finish_img"
+        android:layout_width="200dp"
+        android:layout_height="260dp"
+        android:layout_below="@id/bluetooth_type_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/blurtooth_finish_img" />
+
+</RelativeLayout>

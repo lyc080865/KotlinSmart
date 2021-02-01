@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:background="@drawable/bg_user_fragment_common">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@id/cl_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="26dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_portrait"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_sex_man"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <lpt.smart.pen.view.MediumTextView
+                        android:id="@+id/tv_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/icon_edit_user_info"
+                        android:drawablePadding="8dp"
+                        android:text="编辑"
+                        android:textColor="@color/color_fdb400"
+                        android:textSize="16sp"
+                        app:layout_constraintLeft_toLeftOf="@id/iv_portrait"
+                        app:layout_constraintRight_toRightOf="@id/iv_portrait"
+                        app:layout_constraintTop_toBottomOf="@id/iv_portrait" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cl_middle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <lpt.smart.pen.view.MediumTextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_885400"
+                        android:textSize="20sp"
+                        tools:text="昵称：疯狂宝贝" />
+
+                    <lpt.smart.pen.view.MediumTextView
+                        android:id="@+id/tv_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/color_885400"
+                        android:textSize="20sp"
+                        tools:text="性别：男" />
+
+                    <lpt.smart.pen.view.MediumTextView
+                        android:id="@+id/tv_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/color_885400"
+                        android:textSize="20sp"
+                        tools:text="生日：2020/06/06" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cl_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <lpt.smart.pen.view.MediumTextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/color_885400"
+                        android:textSize="20sp"
+                        tools:text="地区：浙江省 杭州市 余杭区" />
+
+                    <lpt.smart.pen.view.MediumTextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/color_885400"
+                        android:textSize="20sp"
+                        tools:text="手机：139****4952" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <lpt.smart.pen.view.MediumTextView
+                            android:id="@+id/tv_open_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="公开信息："
+                            android:textColor="@color/color_885400"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <lpt.smart.pen.view.MyRadioButton
+                                android:id="@+id/btn_open_info_check"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:background="@null"
+                                android:button="@null"
+                                android:checked="true"
+                                android:drawableStart="@drawable/checkbox_bg"
+                                android:drawablePadding="5dp"
+                                android:gravity="center"
+                                android:text="是"
+                                android:textColor="@color/color_885400"
+                                android:textSize="20sp" />
+
+                            <lpt.smart.pen.view.MyRadioButton
+                                android:id="@+id/btn_open_info_uncheck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:background="@null"
+                                android:button="@null"
+                                android:checked="false"
+                                android:drawableStart="@drawable/checkbox_bg"
+                                android:drawablePadding="5dp"
+                                android:gravity="center"
+                                android:text="否"
+                                android:textColor="@color/color_885400"
+                                android:textSize="20sp" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="35dp"
+                android:background="#FFE6C8" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

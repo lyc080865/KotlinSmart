@@ -1,0 +1,3 @@
+include ':ewrite_sdk'
+include ':app'
+rootProject.name = "KotlinSmart"

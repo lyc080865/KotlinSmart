@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/bluetooth_device_bg">
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/item_bluetooth_name_text"
+        style="@style/text"
+        android:gravity="left"
+        android:padding="20dp"
+        android:textColor="#875300"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/item_bluetooth_connection_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/bluetooth_checked_img"
+        android:visibility="gone" />
+
+</FrameLayout>

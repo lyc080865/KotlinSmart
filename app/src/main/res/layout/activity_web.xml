@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/web_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="backFish"
+        android:src="@drawable/icon_common_back" />
+
+    <LinearLayout
+        android:id="@+id/web_share_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/tv_share_gzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_share_gzh"
+            android:gravity="center_horizontal"
+            android:text="公众号"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/tv_share_friend_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/icon_share_friend_circle"
+            android:gravity="center_horizontal"
+            android:text="朋友圈"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/tv_share_wx_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/icon_share_wx_friend"
+            android:gravity="center_horizontal"
+            android:text="微信好友"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</RelativeLayout>

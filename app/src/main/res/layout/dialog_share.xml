@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05000000"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/popup_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/share_wechat"
+            style="@style/text"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="分享给好友"
+            android:textColor="@color/text_color"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/share_circle"
+            style="@style/text"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="分享到朋友圈"
+            android:textColor="@color/text_color"
+            android:textSize="11sp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/share_weibo"-->
+<!--            style="@style/text"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableTop="@drawable/weibo_img"-->
+<!--            android:drawablePadding="5dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="分享到微博"-->
+<!--            android:textColor="@color/home_text_no_checked"-->
+<!--            android:textSize="11sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/share_qq"-->
+<!--            style="@style/text"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableTop="@drawable/qq_img"-->
+<!--            android:drawablePadding="5dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="分享到QQ"-->
+<!--            android:textColor="@color/home_text_no_checked"-->
+<!--            android:textSize="11sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/share_feedback"-->
+<!--            style="@style/text"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableTop="@drawable/proposal_img"-->
+<!--            android:drawablePadding="5dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="反馈和建议"-->
+<!--            android:textColor="@color/home_text_no_checked"-->
+<!--            android:textSize="11sp"-->
+<!--            android:visibility="gone" />-->
+    </LinearLayout>
+
+
+</LinearLayout>

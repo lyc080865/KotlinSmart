@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:keepScreenOn="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="backFish"
+        android:src="@drawable/icon_common_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homework_music_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/music_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/homework_gold_text"
+        style="@style/text"
+        android:layout_width="115dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@id/homework_music_img_btn"
+        android:background="@drawable/homework_gold_bg"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="13"
+        android:textColor="#DF8500"
+        android:textSize="16sp"
+        app:layout_constraintRight_toLeftOf="@id/homework_music_img_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/homework_gold_text"
+        app:layout_constraintRight_toLeftOf="@id/homework_gold_text"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/reward_progressbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/homework_progress_bg"
+            android:indeterminate="false"
+            android:max="12"
+            android:progress="7"
+            android:progressDrawable="@drawable/progress_shape" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/reward_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/reward_un_get" />
+
+    </FrameLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/gold_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/gold_img"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/gold_img2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/gold_img"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/gold_img3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/gold_img"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homework_music_img_btn">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homework_music_img_btn"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/dialog_bg">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homework_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:overScrollMode="never" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homework_music_img_btn"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/homework_original_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/homework_title_bg" />
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/homework_point_text"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/homework_btn_check_bg"
+                android:text="范字要点"
+                android:textSize="16sp" />
+
+            <lpt.smart.pen.view.MediumTextView
+                android:id="@+id/homework_submit_text"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/submit_btn_bg"
+                android:text="提交作业"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <include
+        layout="@layout/include_write_layout"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/include_study_end_anim_layout"
+        android:visibility="gone" />
+
+    <lpt.smart.pen.view.FingerImageView
+        android:id="@+id/home_finger_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

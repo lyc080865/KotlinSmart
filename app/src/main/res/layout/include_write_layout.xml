@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mask_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2000000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/include_write_left_text"
+            style="@style/text"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/yellow_close_img"
+            android:drawablePadding="20dp"
+            android:text="退出"
+            android:textSize="20sp" />
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/include_write_center_text"
+            style="@style/text"
+            android:layout_marginLeft="75dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/green_report_img"
+            android:drawablePadding="20dp"
+            android:text="练字报告"
+            android:textSize="20sp" />
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/include_write_right_text"
+            style="@style/text"
+            android:layout_marginLeft="75dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/blue_next_img"
+            android:drawablePadding="20dp"
+            android:text="下一课"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

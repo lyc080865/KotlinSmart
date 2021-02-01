@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ewm_dialog_bg"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/write_bg">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/dialog_ewm_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+        </FrameLayout>
+
+
+        <TextView
+            style="@style/text"
+            android:layout_marginTop="30dp"
+            android:text="关注公众号，随时随地查看宝贝学习进度！"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dialog_ewm_btn"
+            style="@style/text"
+            android:layout_width="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_setting_btn"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="保存二维码"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialog_close_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/dialog_layout"
+        android:src="@drawable/yellow_close_img" />
+
+
+</RelativeLayout>

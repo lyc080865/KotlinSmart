@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="backFish"
+        android:src="@drawable/icon_common_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/tv_info"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_user_center_tab"
+            android:gravity="center"
+            android:text="用户信息"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/tv_setting"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_user_center_tab"
+            android:gravity="center"
+            android:text="通用设置"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+        <lpt.smart.pen.view.MediumTextView
+            android:id="@+id/tv_about"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_user_center_tab"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginBottom="20dp"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_tab" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

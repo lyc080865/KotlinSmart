@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginBottom="30dp"
+    android:background="@drawable/bg_user_fragment_common">
+
+    <ImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_sex_man"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <lpt.smart.pen.view.MyEditText
+        android:id="@+id/edt"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_nickname_edit"
+        android:imeOptions="flagNoExtractUi"
+        android:maxLength="5"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_portrait" />
+
+    <lpt.smart.pen.view.MediumTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称： "
+        android:textColor="@color/color_885400"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/edt"
+        app:layout_constraintRight_toLeftOf="@id/edt"
+        app:layout_constraintTop_toTopOf="@id/edt" />
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/tv_modify"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/bg_modify_nickname_btn"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/color_885400"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/edt"
+        app:layout_constraintLeft_toRightOf="@id/edt"
+        app:layout_constraintTop_toTopOf="@id/edt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

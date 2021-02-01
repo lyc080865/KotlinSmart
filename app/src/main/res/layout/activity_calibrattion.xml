@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calibration_bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="backFish"
+        android:src="@drawable/icon_common_back" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/calibration_one_bg">
+
+        <com.ewrite.ewrite_sdk.widget.WriteDrawView
+            android:id="@+id/calibration_write_img"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="117dp"
+            android:background="@drawable/write_calibration_bg" />
+    </FrameLayout>
+
+
+    <lpt.smart.pen.view.MediumTextView
+        android:id="@+id/calibration_text"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/calibration_orange_text"
+        android:text="我已经写好了!"
+        android:textSize="16sp" />
+
+    <lpt.smart.pen.view.FingerImageView
+        android:id="@+id/calibration_finger_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</FrameLayout>

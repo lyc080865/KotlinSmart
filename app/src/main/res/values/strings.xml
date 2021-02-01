@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">乐写字</string>
+
+    <string name="go_score">去评分</string>
+    <string name="user_protocol">用户协议</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="str_copyright">\u00a9 2020 杭州艺客</string>
+
+    <string name="error_gif">长宽不小于 %1$dpx，且大小不超过 %2$sM。</string>
+    <string name="downing">正在为您下载，请耐心等待~</string>
+</resources>
